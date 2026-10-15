@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Pitaco da Arquiteta · Mila Maia</title>
+
+  <meta
+    name="description"
+    content="Um novo olhar para o seu espaço. Conheça e solicite as consultorias Pitaco e Pitaco em 3D, de Mila Maia Arquitetura."
+  >
+
+  <meta
+    name="referrer"
+    content="strict-origin-when-cross-origin"
+  >
+
+  <style>
+    body {
+      margin: 0;
+      background: #f4f2f3;
+      color: #222222;
+      font-family: Arial, sans-serif;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100dvh;
+      min-height: 600px;
+      border: 0;
+    }
+
+    .fallback {
+      padding: 12px;
+      background: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #87234f;
+    }
+
+    .notice {
+      max-width: 640px;
+      margin: 60px auto;
+      padding: 24px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    id="formulario"
+    title="Formulário Pitaco da Arquiteta"
+    allow="clipboard-write"
+  ></iframe>
+
+  <div class="fallback">
+    Se o formulário não abrir,
+    <a
+      id="linkDireto"
+      target="_blank"
+      rel="noopener"
+    >
+      abra por este link
+    </a>.
+  </div>
+
+  <noscript>
+    <p class="notice">
+      Ative o JavaScript do navegador para abrir o formulário.
+    </p>
+  </noscript>
+
+  <script>
+    const APP_SCRIPT_URL =
+      'https://script.google.com/macros/s/AKfycbzqIqZLRW9fEITkbp5Dii6y8dl69BnztihhbfHNSVvVAp-TPX0A50UngjAlhnY7jAs/exec';
+
+    document.getElementById('formulario').src =
+      APP_SCRIPT_URL;
+
+    document.getElementById('linkDireto').href =
+      APP_SCRIPT_URL;
+  </script>
+</body>
+</html>
